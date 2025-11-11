@@ -13,6 +13,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-attachment: fixed;
 }
 
 .container {
@@ -155,4 +157,43 @@ h1 .input-container input::placeholder,
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .input-container input {
+    font-size: 14px;
+    padding: 16px 40px 16px 16px;
+  }
+
+  .btn {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .register-link p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .input-container {
+    margin: 20px 0;
+  }
 }
