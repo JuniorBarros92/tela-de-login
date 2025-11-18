@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Ícones do Google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="./style.css">
   <title>Tela de Login</title>
 </head>
-
 <body>
   <div class="container">
-    <form>
+    <form action="#" method="POST">
       <h1>Entrar na Plataforma</h1>
+      
       <div class="input-container">
-        <input placeholder="Email" type="email" required>
-        <img src="./person_20dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.png" alt="usuario">
+        <input id="email" placeholder="Email" type="email" required>
+        <label for="email" class="sr-only">Email</label>
+        <span class="material-symbols-outlined icon">person</span>
       </div>
+
       <div class="input-container">
-        <input placeholder="Senha" type="password" required>
-        <img src="./lock_20dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.png" alt="senha">
-        <a href="#">Esqueci minha senha</a>
+        <input id="password" placeholder="Senha" type="password" required>
+        <label for="password" class="sr-only">Senha</label>
+        <span class="material-symbols-outlined icon">lock</span>
       </div>
+      <a href="#" class="forgot-pass">Esqueci minha senha</a>
+
       <button type="submit" class="btn">Entrar</button>
 
       <div class="register-link">
-        <p>Não está cadastrado ? <a href="#">Cadastrar</a> </p>
+        <p>Não está cadastrado? <a href="#">Cadastrar</a></p>
       </div>
     </form>
   </div>
-
 </body>
-
-
 </html>
